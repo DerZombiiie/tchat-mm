@@ -29,15 +29,16 @@ local function has_value (tab, val) -- copied from stackoverflow (again)
     return false
 end
 local function debug (msg) -- only prints if setting debug is on
-    if minetest.settings:get("debug") then
+    if minetest.settings:get("tc_mm_debug") then
         print (msg)
     end
 end
 ---
 
+--- [[ Settings ]] ---
 mtchat = {}
-local msg_prefix = "DM from"
-local prefix = "T0.1"
+local msg_prefix = minetest.settings:get("tc_mm_msg_prefix")
+local prefix = minetest.settings:get("tc_mm_prefix")
 
 minetest.register_on_receiving_chat_message(
     function(message)

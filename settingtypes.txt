@@ -1,3 +1,3 @@
-tcmm_prefix (prefix for TCMM-chat) string T0.1
-tcmm_name_sep (seperator for names in msg) string |
-debug (flag for triggering debug messages) bool false
+tc_mm_msg_prefix (DM prefix) string DM from
+tc_mm_prefix (Prefix of TC) string T0.1
+tc_mm_debug (Debug messages) bool false
